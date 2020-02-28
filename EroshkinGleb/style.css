@@ -1,0 +1,243 @@
+body {
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    background-color: #ffffff;
+    min-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.back {
+    z-index: 10000;
+    position: fixed;
+    top: 520px;
+    right: 10px;
+}
+
+.back_link {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 15px;
+    background-color: #1f1f1f;
+    border-radius: 8px;
+    transition: .4s;
+}
+
+.back_link:hover{
+    background-color: #424242;
+    color: #c6c6c6;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.inner {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+main {
+    background-image: url("img/bg/priroda-gory-les-ozero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.main {
+    padding: 40px 20px;
+}
+
+.circle {
+    box-sizing: border-box;
+    position: relative;
+    z-index: 5;
+    margin: 0 auto;
+    border: 10px solid #ffffff;
+    border-radius: 50%;
+    width: 240px;
+    height: 240px;
+    background-image: url("img/photos/IMG_5502.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.info_container {
+    padding: 80px 0 ;
+    position: relative;
+    z-index: 4;
+    bottom: 100px;
+    background-color:  rgba(255, 255, 255, 0.8);;
+    width: 100%;
+    min-height: 500px;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 1;
+}
+
+.name {
+    display: inline-block;
+    margin: 35px auto;
+    padding: 15px 30px;
+    border-radius: 15px;
+    color: #454545;
+    font-family: 'Oswald', sans-serif;
+}
+
+.link {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: #1f1f1f;
+    transition: .4s;
+}
+.number:hover {
+    color: #969696;
+}
+.email:hover {
+    color: #969696;
+}
+.vk:hover {
+    color: #969696;
+}
+.git:hover {
+    color: #969696;
+}
+
+@media screen and (min-width: 800px) {
+    .name {
+        font-size: 60px;
+    }
+    .link {
+        font-size: 30px;
+    }
+    .link_info {
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 799px) {
+    .name {
+        font-size: 50px;
+    }
+    .link_info {
+        font-size: 20px;
+    }
+    .link {
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .name {
+        font-size: 35px;
+    }
+    .link_info {
+        font-size: 15px;
+    }
+    .link {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 469px) {
+    .name {
+        font-size: 25px;
+    }
+    .link_info {
+        font-size: 10px;
+    }
+    .link {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 352px) {
+    .name {
+        font-size: 20px;
+    }
+    .link_info {
+        font-size: 8px;
+    }
+    .link {
+        font-size: 12px;
+    }
+}
+
+.title {
+    margin-left: 40px;
+    font-family: 'Roboto', sans-serif;
+    color: #454545;
+    font-size: 22px;
+}
+
+.about {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    margin: 0 20px;
+    color: #454545;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.video {
+    width: 60%;
+    border: none;
+    margin: 50px auto 0 auto;
+}
+
+.contacts {
+    flex-wrap: wrap;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.link_info {
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    transition: .4s;
+    width: 42%;
+    display: flex;
+    justify-content: center;
+    margin: 0 0 20px 15px;
+    padding: 5px 20px;
+    border-radius: 15px;
+    background-color: #454545;
+    transition: .4s;
+}
+
+.link_info:hover {
+    background-color: #292929;
+}
+
+.footer {
+    display: flex;
+    justify-content: left;
+    padding-left: 70px;
+}
+
+.footer_info{
+    font-weight: normal;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    color: #1f1f1f;
+}
